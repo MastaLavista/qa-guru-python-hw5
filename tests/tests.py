@@ -1,7 +1,6 @@
 import os
 
-from selene import browser, be, have, by
-import time
+from selene import browser, have, by
 
 
 def test_ui_form():
@@ -25,14 +24,13 @@ def test_ui_form():
 
     browser.element('#submit').click()
 
-    browser.element(".modal-body").should(have.text("Test User"))
-    browser.element(".modal-body").should(have.text("testemail@yandex.ru"))
-    browser.element(".modal-body").should(have.text("Female"))
-    browser.element(".modal-body").should(have.text("4456723492"))
-    browser.element(".modal-body").should(have.text("08 May,1989"))
-    browser.element(".modal-body").should(have.text("Biology, Chemistry"))
-    browser.element(".modal-body").should(have.text("Reading"))
-    browser.element(".modal-body").should(have.text("test-fox.jpg"))
-    browser.element(".modal-body").should(have.text("Navi Shin, 1566"))
-    browser.element(".modal-body").should(have.text("NCR Delhi"))
-
+    browser.element('.modal-body').should(have.text('Test User'))
+    browser.element('.modal-body').should(have.text('testemail@yandex.ru'))
+    browser.element('.modal-body').should(have.text('Female'))
+    browser.element('.modal-body').should(have.text('4456723492'))
+    browser.element('.modal-body').should(have.text('08 May,1989'))
+    browser.element('.modal-body').should(have.text('Biology, Chemistry'))
+    browser.element('.modal-body').should(have.text('Reading'))
+    browser.element('.modal-body').should(have.text('test-fox.jpg'))
+    browser.element('.modal-body').should(have.text('Navi Shin, 1566'))
+    browser.element('.modal-body').should(have.text('NCR Delhi'))
